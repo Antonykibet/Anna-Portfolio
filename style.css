@@ -7,6 +7,9 @@ body{
 p{
     margin: 0;
 }
+a{
+    text-decoration-line: none;
+}
 #header{
     height: 10vh;
     color: rgb(206, 206, 206);
@@ -32,9 +35,29 @@ p{
     color: whitesmoke;
     font-family: 'Poppins';
 }
+.intro{
+    margin: 1px;
+    
+}
+#name{
+    font-weight: 400;
+    font-size: 50px;
+}
+#filmMaker,#filmDirector{
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-offset: 2;
+}
+.introImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+    object-position: top;
+}
 #filterScreen{
     background-color: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -43,7 +66,6 @@ p{
     width: 100%;
 }
 #aboutAndProjects{
-    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -110,7 +132,6 @@ p{
     width: 90%;
     padding: 4%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     color: whitesmoke;
     font-family: 'Poppins';
@@ -134,7 +155,6 @@ p{
     font-size: 40px;
 }
 .projectBox{
-    height: 20vh;
     width: 90%;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
@@ -148,4 +168,42 @@ p{
     margin-top: 8px;
     font-style: italic;
     color:  rgb(150, 150, 150);
+}
+@media screen and (max-width: 1000px){
+    #landing{
+        background-size: cover;
+        background-position: center;
+    }
+    #header{
+        padding-left: 56px;
+    }
+    #aboutAndProjects{
+        flex-direction: column;
+        height: auto;
+    }
+    #about{
+        width: 100%;
+        height: auto;
+    }
+    #projects{
+        width: 100%;
+        height: auto;
+        width: 90%;
+    }
+    #aboutpfp{
+        padding-left: 16px;
+        padding-right: 16px;
+        justify-content: space-between;
+        align-items: start;
+    }
+    #verticalLine{
+        display: none;
+    }
+    #aboutImagePfp{
+        width: 100px;
+        height: 100px;
+    }
+    #hashtags{
+        margin-left: 8px;
+    }
 }
